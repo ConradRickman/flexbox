@@ -1,2 +1,50 @@
 @import 'partials/base';
 
+nav{
+    display: flex;
+    justify-content: space-around;
+}
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-content{
+    flex-direction: column;
+}
+.sidebar{
+    background-color: white;
+}
+
+@media (min-width: 1024px){
+    h1{
+        font-size: 4em;
+    }
+    .main-container{
+        display: flex;
+        .post{
+            flex-basis: 50%;
+        }
+        .sidebar{
+            flex-grow: 1;
+        }
+    }
+    .mixed-layout{
+        display: flex;
+        .first{
+            flex-basis: 50%;
+        }
+        .second{
+            flex-basis: 50%;
+            display: flex;
+            flex-flow: row nowrap;
+            .second-a{
+                flex-grow: 1;
+            }
+            .second-b{
+                flex-grow: 1;
+                
+            }
+        }
+    }
+}
