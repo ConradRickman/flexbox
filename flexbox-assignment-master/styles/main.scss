@@ -23,7 +23,7 @@ nav{
     .main-container{
         display: flex;
         .post{
-            flex-grow: 1;
+            flex-basis: 50%;
         }
         .sidebar{
             flex-grow: 1;
@@ -32,10 +32,10 @@ nav{
     .mixed-layout{
         display: flex;
         .first{
-            flex-grow: 1;
+            flex-basis: 50%;
         }
         .second{
-            flex-grow: 1;
+            flex-basis: 50%;
             display: flex;
             flex-flow: row nowrap;
             .second-a{
